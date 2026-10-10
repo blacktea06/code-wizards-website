@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
+
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: "★ ";  
+    text-shadow: 2px 2px 4px beige;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar ul li a:hover {
+    background-color: beige;
+} 
+
+#lightTree {
+    height: 500px;
+    width: 100%;
+    display: block;
+}
+
+#slogan {
+    text-align: center;  
+    color: white;  
+    top: 20%;
+    left: 50%; 
+    position: absolute;
+    text-shadow: 2px 2px 4px rgba(224, 212, 128, 0.5);
+}
+
+.ver_container{
+    display: flex;
+    justify-content: stretch;
+    height: max-content;
+    width: auto;
+}
+
+.hor_container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+#scroll2{
+    background-size: cover;  
+    width: 500px;
+    min-height: 300px;
+    max-height: 500px;
+    padding-left: 60px;
+    padding-right: 20px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: url(img/Scroll-PNG.webp);  
+}
+
+html, body{
+    background-image: url(img/sunny-boho-pattern-repeat-removable-wallpaper-design-683x1024.jpg);  /* Fixed: Removed leading slash from path */
+    background-color: #fff8dc;
+    width: 100%;
+    height: 100%;
+    font-family: "Quintessential", serif;  
+    padding-top: 10px;
+    margin: 0; 
+}
+
+.header-container{
+    top: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #add8e6;
+    position: fixed; 
+    z-index: 1000;
+}
+
+.btns {
+   margin-left: auto;
+   right: 2rem;  
+   display: flex;
+   gap: 1rem;
+}
+
+.account {
+    display: flex;
+    justify-content: flex-end; 
+    gap: 10px; 
+    padding: 10px 20px; 
+    top: 0;
+    right: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.header-button{
+    background-color: #800000;
+    justify-content: end;  
+    color: white;
+    border: none;
+    padding: 5px 12px;
+    border-radius: 5px;  
+    cursor: pointer;
+}
+
+.header-button:hover {
+    background-color: #0056b3;
+}
+
+.pic {
+    border-style: groove;
+    display: block;
+    margin: 0 auto;
+    width: 25%;
+    border: 1px solid #800000; 
+}
+
+#icon{
+    height: 100px;
+    display: inline-block;
+    align-items: center;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    background-color: #fff8dc;
+    list-style-type: none;
+    padding: 0 20px;
+    margin: 0;
+}
+
+#scroll {
+    background-position: center;
+    height: min-content;
+    margin: 0 auto;
+    background-size: cover;
+    width: 500px;
+    padding-left: 100px;
+    padding-right: 90px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: url(img/Scroll-PNG-Image.webp);
+}
+
+.footer {
+    bottom: 0;
+    width: auto;  
+    background-color: #add8e6;  
+    color: white; 
+    text-align: center; 
+    padding: 15px 0; 
+    font-family: Arial, sans-serif;
+}
+
+.footer:hover {
+    color: #800000;
+}
+
+#rsvp-button{
+    background-color: beige;
+    color: midnightblue;
+    padding: 5px 12px;
+    border-radius: 5px;  
+    text-align: center;
+}
+
+#rsvp-button:hover{
+    background-color: #eba666; 
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/*** RSVP Section ***
+  
+  Purpose:
+  - Add style rules for your website's RSVP form
+
+  When To Modify:
+  - [ ] Project 6 (REQUIRED FEATURE)
+  - [ ] Project 7 (REQUIRED FEATURE)
+  - [ ] Any time after
+***/
+
+#book {
+    height: 600px;
+    max-width: 900px;
+}
+
+.book-layout {
+    position: relative;
+    max-width: 900px; 
+    margin: 0 auto;
+}
+
+.book-content {
+    position: absolute;
+    top: 50px; /* Add some space from the top of the book */
+    left: 0;
+    width: 100%;
+    height: 500px; /* Limit height to ensure content fits */
+    display: flex; /* Change from grid to flex for the two-column layout */
+    box-sizing: border-box;
+}
+
+.text-content {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 20px 40px;
+}
+
+/* Split the book into two pages */
+.rsvp-para {
+    flex: 1; /* Left page */
+    color: #0056b3;
+    padding: 20px;
+    padding-left: 130px; /* Adjusted to fit inside left page */
+    padding-right: 40px;
+    max-height: 460px; /* Limit height to prevent overflow */
+    overflow-y: auto; /* Add scrolling if content is too long */
+    font-size: 0.95rem; /* Slightly smaller text to fit better */
+}
+
+.rsvp-participants {
+    flex: 1; /* Right page */
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 130px; /* Adjusted to fit inside right page */
+    max-height: 460px; /* Limit height to prevent overflow */
+    overflow-y: auto; /* Add scrolling if content is too long */
+    font-size: 0.95rem; /* Slightly smaller text to fit better */
+}
+
+/* Ensure RSVP participant entries don't overflow */
+.rsvp-participants p {
+    margin: 8px 0;
+    word-wrap: break-word;
+}
+
+/* Add other rsvp-related selectors here */
+
+#dark-mode{
+    background-color: black;
+    color: #add8e6;
+    text-decoration: wavy;
+    border: midnightblue; 
+    border-width: 30px;
+    padding: 7px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dark-mode,
+.dark-mode section,
+.dark-mode .links{
+    background-image: url(img/darkmode.webp);
+}
+
+.dark-mode #slogan,
+.dark-mode title { 
+    color: white;
+}
+
+.dark-mode .title{
+    background-color: midnightblue;
+}
+
+.dark-mode .header-container{
+    background-color: #800000;
+}
+
+.dark-mode a:visited {
+    color: black;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: beige;
+    height: min-content;
+    width: 300px;
+    margin-right: 40px;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+.box:hover{
+    transform: translateY(-2px);
+    border-style: dotted;
+    border-color: midnightblue;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.schedule {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-container {
+    padding: 50px;
+    width: 55%;
+    background-color: #fff8dc;
+    color: #800000;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: "Quintessential", serif;
+    border-radius: 15px;
+    border: 3px solid #800000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.modal-item {
+    padding: 10px;
+}
+
+#modal-text {
+    font-size: 1.5rem;
+    color: #800000;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+#modal-image {
+    height: 150px;
+    transition: transform 0.5s ease;
+}
+
+.modal {
+    display: none;   /* modal should be hidden by default*/
+    position: fixed; /* modal cannot move around the screen */
+    z-index: 2;      /* modal appears above other elements */ 
+    
+    /* Make the modal fill the entire screen */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /* Add a semi-transparent background to shadow non-modal elements*/
+    background-color: rgba(0,0,0,0.4); /* 40% opacity black */
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+  }
+
+  .modal-container {
+      padding: 50px;
+      width: 55%;
+      background-color: #fff8dc;
+      color: #800000;
+      text-align: center;
+      font-size: 1.2rem;
+      font-family: "Quintessential", serif;
+      border-radius: 15px;
+      border: 3px solid #800000;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+  }
+  
+  .modal-item {
+      padding: 10px;
+  }
+  #modal-text {
+      font-size: 1.5rem;
+      color: #800000;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+  }
+  #modal-image {
+      height: 150px;
+      transition: transform 0.5s ease;
+  }
