@@ -21,9 +21,9 @@ This website is inspired by Quincy Larson, the founder of FreeCodeCamp, who cred
 - **Connect** — and network to build friendships you can lean on for your future career.
 - **Community** — engagement.
 
-## Preview
+## Preview 
 
-Here's the site's dark mode toggle in action, switching between the light forest scene and the dark forest scene with its matching wallpaper:
+Here is the site's dark mode toggle in action, switching between the light forest scene and the dark forest scene with its matching wallpaper:
 
 ![Dark mode toggle demo](darkmode.gif)
 
