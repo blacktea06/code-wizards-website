@@ -21,6 +21,12 @@ This website is inspired by Quincy Larson, the founder of FreeCodeCamp, who cred
 - **Connect** — and network to build friendships you can lean on for your future career.
 - **Community** — engagement.
 
+## Preview
+
+Here's the site's dark mode toggle in action, switching between the light forest scene and the dark forest scene with its matching wallpaper:
+
+![Dark mode toggle demo](darkmode.gif)
+
 ## Features
 
 - **Dark / light mode toggle** — with an animated scene and background wallpaper transition.
@@ -45,6 +51,7 @@ First Website/
 ├── styles.css      # Styling, themes, and layout
 ├── index.js        # Dark mode, form handling, and modal logic
 ├── codewiz.gif     # Demo animation
+├── darkmode.gif    # Dark mode toggle demo animation
 ├── README.md
 ├── img/            # Images, logos, and background art
 └── .vscode/        # Editor settings
